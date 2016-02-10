@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YVSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32l-eq-ABF" customClass="YVSwitch" customModule="YVSwitch" customModuleProvider="target">
+                                <rect key="frame" x="265" y="278" width="70" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="PfT-Fy-qMM"/>
+                                    <constraint firstAttribute="height" constant="45" id="qBt-so-RLJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbCornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.017777220664625153" green="0.80129253926701571" blue="0.3100080175300437" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
+                                        <color key="value" red="0.84473849258289702" green="0.84473849258289702" blue="0.84473849258289702" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb_image"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="storyboardSwitchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="RnC-fv-L8q"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coder instance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-iP-mPd">
+                                <rect key="frame" x="247" y="248" width="106" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frame instance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCg-aO-8EM">
+                                <rect key="frame" x="248" y="453" width="104" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="32l-eq-ABF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1aJ-lX-2wk"/>
+                            <constraint firstItem="32l-eq-ABF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B7L-xG-iOf"/>
+                            <constraint firstItem="MCg-aO-8EM" firstAttribute="top" secondItem="32l-eq-ABF" secondAttribute="bottom" constant="130" id="HDj-sC-Yoi"/>
+                            <constraint firstItem="bC6-iP-mPd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IWt-Th-t3u"/>
+                            <constraint firstItem="MCg-aO-8EM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bZT-In-g0H"/>
+                            <constraint firstItem="32l-eq-ABF" firstAttribute="top" secondItem="bC6-iP-mPd" secondAttribute="bottom" constant="10" id="uOv-W4-Mvj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thumb_image" width="20" height="20"/>
+    </resources>
+</document>
